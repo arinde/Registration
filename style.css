@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding:0;
+  border:none;
+  outline:0;
+  vertical-align: baseline;
+  font-family: 'Inter','Roboto Condensed', sans-serif;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #F4F4F4;
+}
+ul, ul {
+	list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+header{
+    font-family:'Roboto Condensed', sans-serif;
+    display: flex;
+    padding: 16px 80px;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF;;
+}
+nav .hamb{
+    display:none;
+}
+header > .navigations ul {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+header > .navigations ul li{
+    font-family: DM Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.navigations ul li a{
+    color:  #1C3144;
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.user-profile > .profile-img svg{
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    color:#7E82A0;
+}
+.user-profile > .dropdown-icon svg{
+    width: 20px;
+    height: 20px;
+    color: #094357;
+}
+/* main content */
+.hero-text{
+    display: flex;
+    padding: 48px 80px;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    align-self: stretch;
+}
+.hero-text > .container#signupForm{
+    display: flex;
+    width: 676px;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    border-radius: 16px;
+    background-color:#fff;
+}
+.container .form-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    color: #00444F;
+}
+.form-heading > h3{
+    color:#00444F;
+    text-align: center;
+    font-family: Financier Display;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.form-heading > p{
+    color:  #667085;
+    text-align: center;
+    font-size: 15px;
+    width:453px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+/* form styling */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;;
+}
+/* styling for all the div in the form */
+form .user-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    align-self: stretch;
+}
+form label{
+    color: #344054;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+form  input, select{
+    display: flex;
+    padding: 8px 14px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 56px;
+    border: 1px solid #D0D5DD;
+    background: #fff;   
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+form input[type="text"],
+form input[type="number"],
+form select
+{
+    color: #B2B5BA;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+form > .ageGender{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+.ageGender .age:nth-child(1){
+   width:298px;
+}
+.ageGender .gender select{
+    width:298px;
+    height:42px;
+}
+form > .stateArea{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+.stateArea .state{
+    width:298px;
+}
+.stateArea .area select{
+    width:298px;
+    height:42px;
+}
+.state select option, 
+.area select option{
+    color:#000;
+}
+/* button styling */
+.container .button{
+    width:612px;
+    display: flex;
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    background-color: #009444 ;
+    border-radius: 40px;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.button a{
+    color:#fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+}
+
+@media screen and (max-width:930px){
+    nav .hamb{
+        width:35px;
+        height:20px;
+        right:3%;
+        z-index: 5;
+        position: absolute;
+        background: transparent;
+        cursor: pointer;
+        display: initial;
+        bottom: 6px;
+    }
+    nav .hamb span{
+        display: block;
+        background:#009444;
+        width:100%;
+        height:3px;
+        transition: .3s;
+        transition-property: transform,opacity;
+    }
+    nav .hamb span:nth-child(2){
+        margin:7px 0px;
+    }
+    .click{
+        top:46px;
+    }
+    .click span{
+        position: absolute;
+        margin-top: 12px;
+      
+    }
+    .click span:first-child{
+        transform: rotate(-40deg);
+    }
+    .click span:nth-child(2){
+        opacity: 0;
+        margin: 0;
+    }
+    .click span:last-child{
+        transform:rotate(40deg);
+        top:0;
+    }
+    nav .nav-list{
+        position: absolute;
+        top:90px;
+        right:-65%;
+        bottom:0;
+        width:60%;
+        height: 50%;
+        background: black;
+        z-index: 2;
+        padding: 6% 9%;
+        transition: .3s right;
+        border-radius: 10px;
+    }
+    nav .nav-list li{
+        display: block;
+    }
+    nav .nav-list li a{
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+    nav .nav-list.open{
+        right:0;
+    }
+    .user-profile{
+        display:none;
+    }
+}
